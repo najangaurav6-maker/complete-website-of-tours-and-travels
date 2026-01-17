@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact | Travel Yatra</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo"><span>Travel Yatra</span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html" class="active">Contact</a>
+      <a class="cta" href="booking.html">Book</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span></button>
+  </header>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Contact us</h2>
+      <p class="lead">We’ll get back within 24 hours.</p>
+    </div>
+
+    <form id="contactForm" class="card" style="padding:16px;">
+      <div class="grid form-grid">
+        <label><span>Name</span><input type="text" name="name" required /></label>
+        <label><span>Email</span><input type="email" name="email" required /></label>
+        <label class="full"><span>Message</span><textarea name="message" rows="4" required></textarea></label>
+      </div>
+      <button class="btn" type="submit">Send message</button>
+      <p id="contactStatus" class="lead" style="margin-top:10px;"></p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-inner"><strong>Travel Yatra</strong></div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

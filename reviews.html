@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Reviews | Travel Yatra</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo"><span>Travel Yatra</span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="reviews.html" class="active">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="booking.html">Book</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span></button>
+  </header>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Traveler reviews</h2>
+      <p class="lead">Authentic experiences from our guests.</p>
+    </div>
+
+    <div class="grid" id="reviewsGrid"><!-- JS renders --></div>
+
+    <div class="card" style="padding:16px; margin-top:24px;">
+      <h3>Write a review</h3>
+      <form id="reviewForm">
+        <div class="grid form-grid">
+          <label><span>Name</span><input type="text" name="name" required /></label>
+          <label><span>Rating</span><input type="number" name="rating" min="1" max="5" value="5" required /></label>
+          <label class="full"><span>Your review</span><textarea name="text" rows="4" required></textarea></label>
+        </div>
+        <button class="btn" type="submit">Submit review</button>
+        <p id="reviewStatus" class="lead" style="margin-top:10px;"></p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-inner"><strong>Travel Yatra</strong></div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

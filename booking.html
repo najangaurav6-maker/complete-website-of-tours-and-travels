@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Booking | Travel Yatra</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="logo"><span>Travel Yatra</span></div>
+    <nav class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="destinations.html">Destinations</a>
+      <a href="packages.html">Packages</a>
+      <a href="reviews.html">Reviews</a>
+      <a href="contact.html">Contact</a>
+      <a class="cta" href="booking.html">Book</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Menu"><span></span></button>
+  </header>
+
+  <section class="section">
+    <div class="section-header">
+      <h2>Booking form</h2>
+      <p class="lead">No payment required—submit your details and we’ll confirm availability.</p>
+    </div>
+
+    <form id="bookingForm" class="card" style="padding:16px;">
+      <div class="grid form-grid">
+        <label><span>Full name</span><input type="text" name="name" required /></label>
+        <label><span>Email</span><input type="email" name="email" required /></label>
+        <label><span>Phone</span><input type="tel" name="phone" required /></label>
+        <label>
+          <span>Package</span>
+          <select name="package" id="packageSelect" required></select>
+        </label>
+        <label><span>Start date</span><input type="date" name="startDate" required /></label>
+        <label><span>End date</span><input type="date" name="endDate" required /></label>
+        <label><span>Travelers</span><input type="number" name="travelers" min="1" value="2" required /></label>
+        <label class="full"><span>Notes</span><textarea name="notes" rows="4" placeholder="Preferences, special requests"></textarea></label>
+      </div>
+      <div style="margin-top:12px; display:flex; gap:10px;">
+        <button class="btn" type="submit">Submit booking</button>
+        <a class="btn secondary" href="packages.html">Browse packages</a>
+      </div>
+      <p id="bookingStatus" class="lead" style="margin-top:10px;"></p>
+    </form>
+  </section>
+
+  <footer>
+    <div class="footer-inner"><strong>Travel Yatra</strong></div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
